@@ -8,10 +8,6 @@
 	  	<link rel="stylesheet" type="text/css" href="css/slideme2.css"/>
 	  	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
 	  	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	  	<script src="js/jquery-1.11.2.min.js"></script>
-	  	<script src="js/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slideme2.js"></script>
 	</head>
 	<body>		
 		<div id="slider_mesa_l">
@@ -46,10 +42,11 @@
 				</section>
 			</div>	
 		</div>
-
+		
+	  	<script src="js/jquery-1.11.2.min.js"></script>
+	  	<script src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slideme2.js"></script>
 		<script type="text/javascript">
-				//Función que espera a que se cargue el contenido de la página antes de ejecutar el javascript.
-		 		$( window ).load(function() {
 		 			//Esta sentencia esconde el menú de proyectos en la carga inicial de la página.
 		 			$(".menu_proyectos").hide();
 		 			//Código que define el funcionamiento del slider y el elemento html al que se aplica.
@@ -76,7 +73,6 @@
 							$(".menu_proyectos").slideToggle("fast");
 						});
 					});
-				});
 		</script>
 
 
