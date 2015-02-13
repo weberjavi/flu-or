@@ -23,6 +23,71 @@
 				<a class="telefono" href="tel:+34881993123"><p>881993123</p></a>
 				<a class="direccion" href="https://www.google.com/maps/place/flu-or/@43.377828,-8.405882,17z/data=!3m1!4b1!4m2!3m1!1s0xd2e7c7041a82c1d:0x9296c1e828edc48e?hl=es" target="_blank"><p>angel rebollo 88, a coruña, españa</p></a>
 			</section>
+			<!--Esta lista permite cargar las imágenes que se emplearán a lo largo de la web al cargar la página de bienvenida-->
+			<div>
+				<ul>
+					<li id="preload_1"></li>
+					<li id="preload_2"></li>
+					<li id="preload_3"></li>
+					<li id="preload_4"></li>
+					<li id="preload_5"></li>
+					<li id="preload_6"></li>
+					<li id="preload_7"></li>
+					<li id="preload_8"></li>
+					<li id="preload_9"></li>
+					<li id="preload_10"></li>
+					<li id="preload_11"></li>
+					<li id="preload_12"></li>
+					<li id="preload_13"></li>
+					<li id="preload_14"></li>
+					<li id="preload_15"></li>
+					<li id="preload_16"></li>
+					<li id="preload_17"></li>
+					<li id="preload_18"></li>
+					<li id="preload_19"></li>
+				</ul>
+			</div>
+			<script src="js/jquery-1.11.2.min.js"></script>
+			<script type="text/javascript">
+			// función que permite cargar las imágenes de la página antes de necesita @ http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/
+			function preloader() {
+						if (document.getElementById) {
+					document.getElementById("preload_1").style.background = "url(img/mesaIII_1.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_2").style.background = "url(img/mesaIII_2.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_3").style.background = "url(img/mesaIII_3.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_4").style.background = "url(img/mesaIII_4.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_5").style.background = "url(img/mesaL_1.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_6").style.background = "url(img/mesaL_2.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_7").style.background = "url(img/mesaO_1.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_8").style.background = "url(img/lampara_1.png) no-repeat -9999px -9999px";
+					document.getElementById("preload_9").style.background = "url(img/lampara_2.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_10").style.background = "url(img/lamparaL_1.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_11").style.background = "url(img/lamparaL_2.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_12").style.background = "url(img/lamparaL_3.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_13").style.background = "url(img/lamparaL_4.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_14").style.background = "url(img/lamparaL_5.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_15").style.background = "url(img/lamparaL_6.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_16").style.background = "url(img/te_1.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_17").style.background = "url(img/te_2.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_18").style.background = "url(img/te_3.png) no-repeat -9999px -9999px";	
+					document.getElementById("preload_19").style.background = "url(img/te_4.png) no-repeat -9999px -9999px";	
+				}
+			}
+			function addLoadEvent(func) {
+				var oldonload = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func;
+				} else {
+					window.onload = function() {
+						if (oldonload) {
+							oldonload();
+						}
+						func();
+					}
+				}
+			}
+			addLoadEvent(preloader);
+</script>
 		</div>
 	</body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 	<head>
 	 	<meta charset="utf-8">
-	 	<title>FLU-OR | Te</title>
+	 	<title>FLU-OR | Otras Naturalezas</title>
 	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	  	<link rel="stylesheet" type="text/css" href="css/modernizr.css">
 	  	<link rel="stylesheet" type="text/css" href="css/slideme2.css"/>
@@ -13,7 +13,7 @@
 		<div id="slider_naturalezas">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<a href="#" id="btn_back"><span class="izq">FLU-OR</span><span class="dcha">X</span></a>
+					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
@@ -37,7 +37,7 @@
 						<li><a href="diegoEstrada.html">diego estrada</a></li>
 						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a href="te.html">te</a></li>
-						<li><a href="naturalezas.html"><del>otras naturalezas</del></a></li>
+						<li><a id="btn_mostrar" href="#"><del>otras naturalezas</del></a></li>
 					</ul>
 				</section>
 			</div>	
@@ -66,13 +66,22 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_back").click(function(){
+					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: 0,
+							width: "0%",
 							opacity: 0
 						}, 300, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
+					});
+					//Código que muestra la información sobre el proyecto una vez estamos en la página del proyecto sin necesidad de recargar la página.		
+					$("#btn_mostrar").click(function(){
+						$(".menu_proyectos").slideToggle( "fast", function() {
+		    				$("#informacion").animate({
+								width: "50%",
+								opacity: 1
+							}, 300, "swing");
+	  					});
 					});
 		</script>
 

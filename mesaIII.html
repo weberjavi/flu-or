@@ -8,14 +8,12 @@
 	  	<link rel="stylesheet" type="text/css" href="css/slideme2.css"/>
 	  	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
 	  	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-
 	</head>
 	<body>		
 		<div id="slider_mesaIII">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<a href="#" id="btn_back"><span class="izq">FLU-OR</span><span class="dcha">X</span></a>
+					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
@@ -33,7 +31,7 @@
 					<ul>
 						<li><a href="moitoConto.html">moito conto</a></li>
 						<li><a href="mesaO.html">mesa o</a></li>
-						<li><a href="mesaIII.html"><del>mesa iii</del></a></li>
+						<li><a id="btn_mostrar" href="#"><del>mesa iii</del></a></li>
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
@@ -68,13 +66,22 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_back").click(function(){
+					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: 0,
+							width: "0%",
 							opacity: 0
 						}, 300, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
+					});
+					//Código que muestra la información sobre el proyecto una vez estamos en la página del proyecto sin necesidad de recargar la página.		
+					$("#btn_mostrar").click(function(){
+						$(".menu_proyectos").slideToggle( "fast", function() {
+		    				$("#informacion").animate({
+								width: "50%",
+								opacity: 1
+							}, 300, "swing");
+	  					});
 					});
 		</script>
 
