@@ -13,7 +13,15 @@
 		<div id="slider_mesaIII">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+				</section>
+				<section class="forma_texto">
+						<p>La mesa III es una mesa alta tipo barra con una condición muy especial: tiene una distribución de cuatro patas clásica, pero debe prescindir de una. Lo que de primeras sería un problema de estabilidad, se convierte en la virtud que la caracteriza. Se libera una esquina, el vidreo vuela y se gana en comodidad.</p>
+						<p>La inestabilidad se resuelve mediante una serie de contrapesos de madera que además funcionan como rueda y botellero.</p>
+						<h3>FLU-OR</h3>
+				</section>
+				<section class="plano">
+					<img src="img/plano_mesaIII.png">
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
@@ -29,7 +37,7 @@
 				</section>
 				<section class="proyectos">
 					<ul>
-						<li><a href="moitoConto.html">moito conto</a></li>
+						<!--li><a href="moitoConto.html">moito conto</a></li-->
 						<li><a href="mesaO.html">mesa o</a></li>
 						<li><a id="btn_mostrar" href="#"><del>mesa iii</del></a></li>
 						<li><a href="mesaL.html">mesa l</a></li>
@@ -68,9 +76,8 @@
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
 					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: "0%",
-							opacity: 0
-						}, 300, "swing", function() {
+							left: -1000
+						}, 500, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
 					});
@@ -78,9 +85,8 @@
 					$("#btn_mostrar").click(function(){
 						$(".menu_proyectos").slideToggle( "fast", function() {
 		    				$("#informacion").animate({
-								width: "50%",
-								opacity: 1
-							}, 300, "swing");
+								left: 0
+							}, 500, "swing");
 	  					});
 					});
 		</script>

@@ -15,6 +15,11 @@
 				<section class="cerrar">
 					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
 				</section>
+				<section class="forma_texto">
+				</section>
+				<section class="plano">
+					<img src="img/plano_lamparaL.png">
+				</section>
 			</div>
 			<div class="shape-wraper"></div>
 			<ul class="slideme">
@@ -31,7 +36,7 @@
 				</section>
 				<section class="proyectos">
 					<ul>
-						<li><a href="moitoConto.html">moito conto</a></li>
+						<!--li><a href="moitoConto.html">moito conto</a></li-->
 							<li><a href="mesaO.html">mesa o</a></li>
 							<li><a href="mesaIII.html">mesa iii</a></li>
 							<li><a href="mesaL.html">mesa l</a></li>
@@ -71,9 +76,8 @@
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
 					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: "0%",
-							opacity: 0
-						}, 300, "swing", function() {
+							left: -1000
+						}, 500, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
 					});
@@ -81,9 +85,8 @@
 					$("#btn_mostrar").click(function(){
 						$(".menu_proyectos").slideToggle( "fast", function() {
 		    				$("#informacion").animate({
-								width: "50%",
-								opacity: 1
-							}, 300, "swing");
+								left: 0
+							}, 500, "swing");
 	  					});
 					});
 		</script>

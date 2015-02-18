@@ -67,9 +67,8 @@
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
 					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: "0%",
-							opacity: 0
-						}, 300, "swing", function() {
+							left: -1000
+						}, 500, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
 					});
@@ -77,9 +76,8 @@
 					$("#btn_mostrar").click(function(){
 						$(".menu_proyectos").slideToggle( "fast", function() {
 		    				$("#informacion").animate({
-								width: "50%",
-								opacity: 1
-							}, 300, "swing");
+								left: 0
+							}, 500, "swing");
 	  					});
 					});
 		</script>

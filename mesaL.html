@@ -13,7 +13,16 @@
 		<div id="slider_mesa_l">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+				</section>
+				<section class="forma_texto">
+						<p>"L" es una mesa elevable de dos niveles que puede usarse tanto como mesa de comedor com de centro.
+						El movimiento es ascendente, produciéndose en el eje vertical, por lo que la mesa ocupa siempre el mismo espacio en cualquiera de sus dos posiciones.</p>
+						<p>La estructura de las patas en L es la manera más fácil  y limpia de combinar los movimientos, dejanso el máximo espacio libre para los pies y haciendo que la mesa sea lo más cómoda posible.</p>
+						<h3>FLU-OR</h3>
+				</section>
+				<section class="plano">
+					<img src="img/plano_mesaL.png">
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
@@ -27,7 +36,7 @@
 				</section>
 				<section class="proyectos">
 					<ul>
-						<li><a href="moitoConto.html">moito conto</a></li>
+						<!--li><a href="moitoConto.html">moito conto</a></li-->
 						<li><a href="mesaO.html">mesa o</a></li>
 						<li><a href="mesaIII.html">mesa iii</a></li>
 						<li><a id="btn_mostrar" href="#"><del>mesa l</del></a></li>
@@ -67,9 +76,8 @@
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
 					$("#btn_esconder").click(function(){
 						$("#informacion").animate({
-							width: "0%",
-							opacity: 0
-						}, 300, "swing", function() {
+							left: -1000
+						}, 500, "swing", function() {
 							$(".menu_proyectos").slideToggle("fast");
 						});
 					});
@@ -77,9 +85,8 @@
 					$("#btn_mostrar").click(function(){
 						$(".menu_proyectos").slideToggle( "fast", function() {
 		    				$("#informacion").animate({
-								width: "50%",
-								opacity: 1
-							}, 300, "swing");
+								left: 0
+							}, 500, "swing");
 	  					});
 					});
 		</script>
