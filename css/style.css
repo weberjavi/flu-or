@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 body{
-	font-family: "AndaleMono2", helvetica, sans-serif;
+	font-family: "AndaleMono2", Courier, monospace;
 }
 ul li{
   list-style: none;
@@ -29,7 +29,7 @@ HOME
 	font-size: 0.58em;
 }
 .flu-or/*,.flu-or_interior*/{
-	font-family: "Bebas", helvetica, sans-serif;
+	font-family: "Bebas", Helvetica, sans-serif;
 	font-size: 0.6em;
 	margin-bottom: 25px;
 }
@@ -120,7 +120,7 @@ SLIDER
   opacity: 1;
 }
 .forma_texto h3{
-  font-family: "Bebas", helvetica, sans-serif;
+  font-family: "Bebas", Helvetica, sans-serif;
   right: 30%;
   position: absolute;
 }
@@ -143,7 +143,7 @@ SLIDER
   top:3%;
   right: 87%;
   z-index: 8;
-  font-family: "Bebas", helvetica, sans-serif;
+  font-family: "Bebas", Helvetica, sans-serif;
   font-size: 1em;
 }
 .cerrar a{
