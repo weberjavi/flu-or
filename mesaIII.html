@@ -13,12 +13,13 @@
 		<div id="slider_mesaIII">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 				<section class="forma_texto">
-						<p>La mesa III es una mesa alta tipo barra con una condición muy especial: tiene una distribución de cuatro patas clásica, pero debe prescindir de una. Lo que de primeras sería un problema de estabilidad, se convierte en la virtud que la caracteriza. Se libera una esquina, el vidreo vuela y se gana en comodidad.</p>
-						<p>La inestabilidad se resuelve mediante una serie de contrapesos de madera que además funcionan como rueda y botellero.</p>
-						<h3>FLU-OR</h3>
+					<img src="mesaIII.svg">
+						<!--p>La mesa III es una mesa alta tipo barra con una condición muy especial: tiene una distribución de cuatro patas clásica, pero debe prescindir de una. Lo que de primeras sería un problema de estabilidad, se convierte en la virtud que la caracteriza. Se libera una esquina, el vidreo vuela y se gana en comodidad.</p>
+						<p>La inestabilidad se resuelve mediante una serie de contrapesos de madera que además funcionan como rueda y botellero.</p-->
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 				<section class="plano">
 					<img src="img/plano_mesaIII.png">
@@ -43,9 +44,7 @@
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="muebleM.html">mueble m</a></li>
 						<li><a href="diegoEstrada.html">diego estrada</a></li>
-						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a href="te.html">te</a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -74,7 +73,7 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {

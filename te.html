@@ -13,7 +13,11 @@
 		<div id="slider_te">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
+				</section>
+				<section class="forma_texto">
+						<p>“Té” es una pieza tipo clúster que resuelve las necesidades de una sala de estar de manera sencilla y unificada. Mediante la combinación de módulos se crea una superficie que toma forma según el número de elementos y se adapta a las necesidades de cada espacio. El resultado es una plataforma en la que uno puede tumbarse, sentarse o caminar; el suelo se eleva y se transforma en mesa de comedor y el interior de cada módulo sirve como espacio de almacenamiento. El mueble “Té” busca crear un espacio continuo, disolver la multiplicidad de elementos clásica y quedarse con lo esencial, para permitir así una mayor libertad de movimientos y aprovechamiento de las condiciones de un lugar. </p>
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
@@ -38,9 +42,7 @@
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="muebleM.html">mueble m</a></li>
 						<li><a href="diegoEstrada.html">diego estrada</a></li>
-						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a id="btn_mostrar" href="#"><del>te</del></a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -71,7 +73,7 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {

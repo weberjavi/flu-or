@@ -13,11 +13,11 @@
 		<div id="slider_mesaO">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 				<section class="forma_texto">
 						<p>"O" es una mesa de centro metálica cortada a láser con los mínimos apoyos posibles y se resuelve con un único material y color.</p>
-						<h3>FLU-OR</h3>
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 				<section class="plano">
 					<img src="img/plano_mesaO.png">
@@ -40,9 +40,7 @@
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="muebleM.html">mueble m</a></li>
 						<li><a href="diegoEstrada.html">diego estrada</a></li>
-						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a href="te.html">te</a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -72,7 +70,7 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {

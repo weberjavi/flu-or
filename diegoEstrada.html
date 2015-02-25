@@ -13,15 +13,20 @@
 		<div id="slider_diego">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
+				</section>
+				<section class="forma_texto">
+						<p>“La mirada más valedera es la que la lengua no tiene capacidad de hablarla.” Jesús Hernández</p>
+						<p>Proponemos un momento de reflexión personal. “Conócete a ti mismo”, el ideal de comprender la conducta humana y verse a uno mismo como es. El juego de transparencias y cruces representan esas miradas interiores, esa búsqueda introspectiva sobre la belleza y elegancia innatas que muchas veces desconocemos que poseemos, y que los diseños de Diego Estrada evocan, ya de por si, de una manera natural.</p>
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 			</div>
 			<div class="shape-wraper"></div>
 				<ul class="slideme">
 					<li class="uno">
-						<video autoplay loop muted preload="auto" poster="" id="bgvid" class="video">
-							<source src="blackandwine.webm" type="video/webm">
-							<source src="blackandwine.mp4" type="video/mp4">
+						<video autoplay loop preload="auto" poster="" id="bgvid" class="video">
+							<!--source src="blackandwine.webm" type="video/webm"-->
+							<source src="diegoestrada.mp4" type="video/mp4">
 						</video>
 					</li>
 				</ul>
@@ -37,9 +42,7 @@
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="muebleM.html">mueble m</a></li>
 						<li><a id="btn_mostrar" href="#"><del>diego estrada</del></a></li>
-						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a href="te.html">te</a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -72,7 +75,7 @@
 						this.paused?this.play():this.pause();
 					});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {

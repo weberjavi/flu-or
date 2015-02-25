@@ -13,9 +13,12 @@
 		<div id="slider_lamparaL">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<span class="izq"><h3>FLU-OR</h3></span><a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 				<section class="forma_texto">
+						<p>Esta lámpara es el resultado de un proceso de investigación que parte del estudio de un espacio complejo y el uso que de él se hace. Siendo entrada a la vivienda y núcleo de comunicaciones, la pieza no sólo tiene que iluminar la estancia sino completarla y darle carácter. El movimiento que se produce en este espacio hace que se busque un elemento que cambie con el tiempo, visible desde diferentes puntos de vista y que funcione tanto encendido como apagado.</p>
+						<p>En la lámpara L&lt&#93 parten de un solo punto varias fuentes de luz a distintos niveles, unos más altos, otros más bajos, adaptándose a cada una de las estancias y creando un cielo que es diferente según el lugar desde el que se observa.</p>
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 				<section class="plano">
 					<img src="img/plano_lamparaL.png">
@@ -42,9 +45,7 @@
 							<li><a href="mesaL.html">mesa l</a></li>
 							<li><a href="lampara.html">lámpara &lt</a></li>
 							<li><a id="btn_mostrar" href="#"><del>lámpara L&lt</del></a></li>
-							<li><a href="muebleM.html">mueble m</a></li>
 							<li><a href="diegoEstrada.html">diego estrada</a></li>
-							<li><a href="dialogo.html">diálogo</a></li>
 							<li><a href="te.html">te</a></li>
 							<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -74,7 +75,7 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {

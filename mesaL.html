@@ -13,13 +13,13 @@
 		<div id="slider_mesa_l">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
-					<a href="#" id="btn_esconder"><span class="dcha">X</span></a>
+					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 				<section class="forma_texto">
 						<p>"L" es una mesa elevable de dos niveles que puede usarse tanto como mesa de comedor com de centro.
 						El movimiento es ascendente, produciéndose en el eje vertical, por lo que la mesa ocupa siempre el mismo espacio en cualquiera de sus dos posiciones.</p>
 						<p>La estructura de las patas en L es la manera más fácil  y limpia de combinar los movimientos, dejanso el máximo espacio libre para los pies y haciendo que la mesa sea lo más cómoda posible.</p>
-						<h3>FLU-OR</h3>
+						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 				<section class="plano">
 					<img src="img/plano_mesaL.png">
@@ -42,9 +42,7 @@
 						<li><a id="btn_mostrar" href="#"><del>mesa l</del></a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="muebleM.html">mueble m</a></li>
 						<li><a href="diegoEstrada.html">diego estrada</a></li>
-						<li><a href="dialogo.html">diálogo</a></li>
 						<li><a href="te.html">te</a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -74,7 +72,7 @@
 							}
 						});
 					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$("#btn_esconder").click(function(){
+					$(".btn_esconder").click(function(){
 						$("#informacion").animate({
 							left: -1000
 						}, 500, "swing", function() {
