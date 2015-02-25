@@ -12,8 +12,10 @@
 }
 @font-face {
     font-family: "AndaleMono2";
-    src: url("../fonts/ANDALE_MONO2.woff") format("woff");
-    src: url("../fonts/ANDALE_MONO2.ttf") format("truetype");
+    src: url("../fonts/ANDALE_MONO2.woff") format("woff"),
+         url("../fonts/ANDALE_MONO2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 *, *:before, *:after {
   -webkit-box-sizing: border-box; 
@@ -21,7 +23,7 @@
   box-sizing: border-box;
 }
 body{
-	font-family: "AndaleMono2", Courier, monospace;
+	font-family: "AndaleMono2", Andale Mono, monospace;
 }
 ul li{
   list-style: none;
@@ -120,6 +122,9 @@ SLIDER
   -moz-box-shadow:    2px 0px 8px 0px rgba(20, 20, 20, 0.2);
   box-shadow:         2px 0px 8px 0px rgba(20, 20, 20, 0.2);
 }
+.texto_proyecto{
+  font-family: "Bebas", Helvetica, sans-serif;
+}
 .forma_texto{
   max-width: 80%;
   margin: 20% auto;
@@ -215,7 +220,6 @@ font-size: 1.3em;
 #slider_mesaIII .uno{background: url(../img/mesaIII_1.png) no-repeat center center fixed;	-webkit-background-size: cover;	-moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
 #slider_mesaIII .dos{background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;}
 #slider_mesaIII .tres{background: url(../img/mesaIII_3.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
-#slider_mesaIII .cuatro{background: url(../img/mesaIII_4.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============MESA L==================*/
 #slider_mesa_l{
@@ -263,16 +267,6 @@ font-size: 1.3em;
 #slider_diego .dos{ background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 /*VIDEO*/
 video#bgvid { background: url(polina.jpg) no-repeat; position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; background-size: cover;}
-
-/*============DIALOGO==================*/
-#slider_dialogo{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-/*FOTOS*/
-#slider_dialogo .uno{background: url(../img/mesaIII_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_dialogo .dos{background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============TE=============*/
 #slider_te{
