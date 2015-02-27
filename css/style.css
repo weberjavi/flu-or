@@ -10,20 +10,14 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: "AndaleMono2";
-    src: url("../fonts/ANDALE_MONO2.woff") format("woff"),
-         url("../fonts/ANDALE_MONO2.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
 body{
-	font-family: "AndaleMono2", Andale Mono, monospace;
+	font-family: Andale Mono, monospace;
 }
 ul li{
   list-style: none;
@@ -71,7 +65,7 @@ PROYECTOS
 .fondo_proyectos{ 
 	width: 100%;
 	height: 100%;
-    background: url(../img/mesaO_1.png) no-repeat center center fixed; 
+    background: url(../img/img_jpg/mesaO_1.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -117,10 +111,10 @@ SLIDER
   z-index: 7;
   font-size: 0.58em;
   opacity: 1;
-  /*mix-blend-mode: multiply;*/
+  /*mix-blend-mode: multiply;
   -webkit-box-shadow: 2px 0px 8px 0px rgba(20, 20, 20, 0.2);
   -moz-box-shadow:    2px 0px 8px 0px rgba(20, 20, 20, 0.2);
-  box-shadow:         2px 0px 8px 0px rgba(20, 20, 20, 0.2);
+  box-shadow:         2px 0px 8px 0px rgba(20, 20, 20, 0.2);*/
 }
 .texto_proyecto{
   font-family: "Bebas", Helvetica, sans-serif;
@@ -140,7 +134,7 @@ SLIDER
 }
 .plano{
   position: absolute;
-  bottom: 0;
+  bottom: 15%;
 }
 .plano img{
   width: 100%;
@@ -197,8 +191,8 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_mc .uno{background: url(../img/mesaIII_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_mc .dos{background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mc .uno{background: url(../img/img_jpg/mesaIII_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mc .dos{background: url(../img/img_jpg/mesaIII_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============MESA O==================*/
 #slider_mesaO{
@@ -207,8 +201,7 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_mesaO .uno{background: url(../img/mesaO_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_mesaO .dos{background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mesaO .uno{background: url(../img/img_jpg/mesaO_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============MESA III=============*/
 #slider_mesaIII{
@@ -217,9 +210,9 @@ font-size: 1.3em;
 	height: 100%;
 }
 /*FOTOS*/
-#slider_mesaIII .uno{background: url(../img/mesaIII_1.png) no-repeat center center fixed;	-webkit-background-size: cover;	-moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
-#slider_mesaIII .dos{background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;}
-#slider_mesaIII .tres{background: url(../img/mesaIII_3.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
+#slider_mesaIII .uno{background: url(../img/img_jpg/mesaIII_1.jpg) no-repeat center center fixed;	-webkit-background-size: cover;	-moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
+#slider_mesaIII .dos{background: url(../img/img_jpg/mesaIII_2.jpg) no-repeat center center fixed; -webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;}
+#slider_mesaIII .tres{background: url(../img/img_jpg/mesaIII_3.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;	-o-background-size: cover; background-size: cover;}
 
 /*============MESA L==================*/
 #slider_mesa_l{
@@ -228,8 +221,8 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_mesa_l .uno{ background: url(../img/mesaL_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_mesa_l .dos{background: url(../img/mesaL_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mesa_l .uno{ background: url(../img/img_jpg/mesaL_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mesa_l .dos{background: url(../img/img_jpg/mesaL_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============LÁMPARA==================*/
 #slider_lampara{
@@ -238,8 +231,8 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_lampara .uno{background: url(../img/lampara_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_lampara .dos{background: url(../img/lampara_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lampara .uno{background: url(../img/img_jpg/lampara_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lampara .dos{background: url(../img/img_jpg/lampara_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============LÁMPARA L=============*/
 #slider_lamparaL{
@@ -248,12 +241,12 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_lamparaL .uno{background: url(../img/lamparaL_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
-#slider_lamparaL .dos{background: url(../img/lamparaL_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_lamparaL .tres{background: url(../img/lamparaL_3.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_lamparaL .cuatro{background: url(../img/lamparaL_4.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_lamparaL .cinco{background: url(../img/lamparaL_5.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
-#slider_lamparaL .seis{background: url(../img/lamparaL_6.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .uno{background: url(../img/img_jpg/lamparaL_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .dos{background: url(../img/img_jpg/lamparaL_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .tres{background: url(../img/img_jpg/lamparaL_3.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .cuatro{background: url(../img/img_jpg/lamparaL_4.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .cinco{background: url(../img/img_jpg/lamparaL_5.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
+#slider_lamparaL .seis{background: url(../img/img_jpg/lamparaL_6.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 
 /*============DIEGO ESTRADA==================*/
@@ -263,8 +256,8 @@ font-size: 1.3em;
   height: 100%;
 }
 /*FOTOS*/
-#slider_diego .uno{ background: url(../img/mesaIII_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_diego .dos{ background: url(../img/mesaIII_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_diego .uno{ background: url(../img/img_jpg/mesaIII_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_diego .dos{ background: url(../img/img_jpg/mesaIII_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 /*VIDEO*/
 video#bgvid { background: url(polina.jpg) no-repeat; position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; background-size: cover;}
 
@@ -275,13 +268,13 @@ video#bgvid { background: url(polina.jpg) no-repeat; position: fixed; right: 0; 
   height: 100%;
 }
 /*FOTOS*/
-#slider_te .uno{background: url(../img/te_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
-#slider_te .dos{background: url(../img/te_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_te .tres{background: url(../img/te_3.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_te .cuatro{background: url(../img/te_4.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_te .cinco{background: url(../img/te_5.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
-#slider_te .seis{background: url(../img/te_6.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_te .siete{background: url(../img/te_7.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_te .uno{background: url(../img/img_jpg/te_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
+#slider_te .dos{background: url(../img/img_jpg/te_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_te .tres{background: url(../img/img_jpg/te_3.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_te .cuatro{background: url(../img/img_jpg/te_4.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_te .cinco{background: url(../img/img_jpg/te_5.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;}
+#slider_te .seis{background: url(../img/img_jpg/te_6.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_te .siete{background: url(../img/img_jpg/te_7.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============OTRAS NATURALEZAS==================*/
 #slider_naturalezas{
@@ -290,8 +283,8 @@ video#bgvid { background: url(polina.jpg) no-repeat; position: fixed; right: 0; 
   height: 100%;
 }
 /*FOTOS*/
-#slider_naturalezas .uno{background: url(../img/naturalezas_1.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
-#slider_naturalezas .dos{background: url(../img/naturalezas_2.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_naturalezas .uno{background: url(../img/img_jpg/naturalezas_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_naturalezas .dos{background: url(../img/img_jpg/naturalezas_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*
 ANIMACIONES

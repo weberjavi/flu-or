@@ -10,15 +10,14 @@
 	  	<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>		
-		<div id="slider_mesaIII">
+		<div id="slider_mesaIII" class="slider">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
 					<a href="#" class="btn_esconder"><span class="dcha">X</span></a>
 				</section>
 				<section class="forma_texto">
-					<img class="texto_proyecto" src="prueba.svg">
-						<!--p>La mesa III es una mesa alta tipo barra con una condición muy especial: tiene una distribución de cuatro patas clásica, pero debe prescindir de una. Lo que de primeras sería un problema de estabilidad, se convierte en la virtud que la caracteriza. Se libera una esquina, el vidreo vuela y se gana en comodidad.</p>
-						<p>La inestabilidad se resuelve mediante una serie de contrapesos de madera que además funcionan como rueda y botellero.</p-->
+						<p>La mesa III es una mesa alta tipo barra con una condición muy especial: tiene una distribución de cuatro patas clásica, pero debe prescindir de una. Lo que de primeras sería un problema de estabilidad, se convierte en la virtud que la caracteriza. Se libera una esquina, el vidreo vuela y se gana en comodidad.</p>
+						<p>La inestabilidad se resuelve mediante una serie de contrapesos de madera que además funcionan como rueda y botellero.</p>
 						<a href="#" class="btn_esconder"><h3>FLU-OR</h3></a>
 				</section>
 				<section class="plano">
@@ -43,7 +42,7 @@
 						<li><a href="mesaL.html">mesa l</a></li>
 						<li><a href="lampara.html">lámpara &lt</a></li>
 						<li><a href="lamparaL.html">lámpara L&lt</a></li>
-						<li><a href="diegoEstrada.html">diego estrada</a></li>
+						<!--li><a href="diegoEstrada.html">diego estrada</a></li-->
 						<li><a href="te.html">te</a></li>
 						<li><a href="naturalezas.html">otras naturalezas</a></li>
 					</ul>
@@ -51,43 +50,8 @@
 			</div>	
 		</div>
 		<script src="js/jquery-1.11.2.min.js"></script>
-	  	<script src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slideme2.js"></script>
-		<script type="text/javascript">
-		 			//Esta sentencia esconde el menú de proyectos en la carga inicial de la página.
-		 			$(".menu_proyectos").hide();
-		 			//Código que define el funcionamiento del slider y el elemento html al que se aplica.
-		 			//La API del slider se puede consultar en http://slideme.luigiferraresi.it/
-					$("#slider_mesaIII").slideme({
-						arrows: true,
-						loop:true,
-						transition : "fade",
-						resizable: {
-							width: 990,
-							height: 450,
-							},
-						labels : {
-							prev: "&lt",
-							next: "&gt"
-							}
-						});
-					//Código que esconde la información sobre el proyecto, una vez ha desaparecido hace aparecer de nuevo e menú de proyectos.		
-					$(".btn_esconder").click(function(){
-						$("#informacion").animate({
-							left: -1000
-						}, 500, "swing", function() {
-							$(".menu_proyectos").slideToggle("fast");
-						});
-					});
-					//Código que muestra la información sobre el proyecto una vez estamos en la página del proyecto sin necesidad de recargar la página.		
-					$("#btn_mostrar").click(function(){
-						$(".menu_proyectos").slideToggle( "fast", function() {
-		    				$("#informacion").animate({
-								left: 0
-							}, 500, "swing");
-	  					});
-					});
-		</script>
+		<script src="js/main.js"></script>
 
 
 	</body>
