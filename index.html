@@ -1,92 +1,76 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="es" class="no-js">
 	<head>
-	  <meta charset="utf-8">
-	  <title>flu-or</title>
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
-	  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	  <link rel="stylesheet" type="text/css" href="css/modernizr.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>flu-or</title>
+
+		 <!-- Estilos externos -->
+	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	 	 <link rel="stylesheet" type="text/css" href="css/modernizr.css">
+		 <!-- Estilos propios -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	 
 	</head>
-
-
 	<body>
-		<div class="tarjeta">
-			<section class="flu-or">
-				<a href="proyectos.html"><h1>FLU-OR</h1></a>
-			</section>
-			<section class="arquitectura">
-				<p>Arquitectura</p>
-			</section>
-			<section class="datos_contacto">
-				<a class="mail" href="mailto:mail@flu-or.com"><p>mail@flu-or.com</p></a>
-				<a class="telefono" href="tel:+34881993123"><p>881993123</p></a>
-				<a class="direccion" href="https://www.google.com/maps/place/flu-or/@43.377828,-8.405882,17z/data=!3m1!4b1!4m2!3m1!1s0xd2e7c7041a82c1d:0x9296c1e828edc48e?hl=es" target="_blank"><p>angel rebollo 88, a coruña, españa</p></a>
-			</section>
-			<!--Esta lista permite cargar las imágenes que se emplearán a lo largo de la web al cargar la página de bienvenida-->
-			<div>
-				<ul>
-					<li id="preload_1"></li>
-					<li id="preload_2"></li>
-					<li id="preload_3"></li>
-					<li id="preload_4"></li>
-					<li id="preload_5"></li>
-					<li id="preload_6"></li>
-					<li id="preload_7"></li>
-					<li id="preload_8"></li>
-					<li id="preload_9"></li>
-					<li id="preload_10"></li>
-					<li id="preload_11"></li>
-					<li id="preload_12"></li>
-					<li id="preload_13"></li>
-					<li id="preload_14"></li>
-					<li id="preload_15"></li>
-					<li id="preload_16"></li>
-					<li id="preload_17"></li>
-					<li id="preload_18"></li>
-					<li id="preload_19"></li>
-				</ul>
-			</div>
-			<script src="js/jquery-1.11.2.min.js"></script>
-			<script type="text/javascript">
-			// función que permite cargar las imágenes de la página antes de necesita @ http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/
-			function preloader() {
-						if (document.getElementById) {
-					document.getElementById("preload_1").style.background = "url(img/mesaIII_1.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_2").style.background = "url(img/mesaIII_2.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_3").style.background = "url(img/mesaIII_3.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_4").style.background = "url(img/mesaIII_4.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_5").style.background = "url(img/mesaL_1.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_6").style.background = "url(img/mesaL_2.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_7").style.background = "url(img/mesaO_1.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_8").style.background = "url(img/lampara_1.png) no-repeat -9999px -9999px";
-					document.getElementById("preload_9").style.background = "url(img/lampara_2.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_10").style.background = "url(img/lamparaL_1.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_11").style.background = "url(img/lamparaL_2.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_12").style.background = "url(img/lamparaL_3.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_13").style.background = "url(img/lamparaL_4.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_14").style.background = "url(img/lamparaL_5.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_15").style.background = "url(img/lamparaL_6.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_16").style.background = "url(img/te_1.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_17").style.background = "url(img/te_2.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_18").style.background = "url(img/te_3.png) no-repeat -9999px -9999px";	
-					document.getElementById("preload_19").style.background = "url(img/te_4.png) no-repeat -9999px -9999px";	
-				}
-			}
-			function addLoadEvent(func) {
-				var oldonload = window.onload;
-				if (typeof window.onload != 'function') {
-					window.onload = func;
-				} else {
-					window.onload = function() {
-						if (oldonload) {
-							oldonload();
-						}
-						func();
-					}
-				}
-			}
-			addLoadEvent(preloader);
-</script>
-		</div>
+
+		<main >
+			<div id="portada" class="contenedor">
+				<section  id="acordeon" class="contenedor_datos">
+					<section><a href="#" class="btn_acordeon arquitectura"><del>arquitectura</del></a></section>
+					<section class="contenido_acordeon">
+					<p class="estudio"><del>flu-or</del> es un estudio de arquitectura en su sentido más amplio. Entendemos arquitectura como el conjunto de procesos a seguir para llegar a un fin y entendemos ese fin como algo físico o mental, material o inmaterial.<br>
+					Nuestro campo de actuación gira entorno a las personas y su ambiente, trabajando con movimiento, situación, sorpresa, encuentro y materia. Tratamos de agitar y provocar diferentes maneras de usar el espacio en el que uno se encuentra, alterar la percepción a la que se está acostumbrado y generar nuevas relaciones.</p>
+					</section>
+					<p class="datos">mail@flu-or.com</p>
+					<p class="datos">881993123</p>
+					<p class="datos">angel rebollo 88, a coruña, españa</p>
+				</section><!--contenedor_datos-->
+
+				<section class="logo_portada">
+					<a href="#pagina_proyectos" class="gatillo_proyectos">FLU-OR</a>
+				</section> <!--logo_portada-->
+
+			</div> <!-- contenedor-->
+		</main> <!--Este sería el contenedor de la portada-->
+		
+		<div id="pagina_proyectos" class="pagina_proyectos">
+			<div class="pag_proyectos_wrapper fondo_proyectos">
+
+				<div class="menu_proyectos_portada">
+					<section class="flu-or">
+						<a href="#portada" class="gatillo_proyectos"><h1>FLU-OR</h1></a>
+					</section>
+					<section class="proyectos">
+						<ul>
+							<!--li><a href="moitoConto.html">moito conto</a></li-->
+							<li><a href="mesaO_lateral.html">mesa o</a></li>
+							<li><a href="mesaIII.html">mesa iii</a></li>
+							<li><a href="mesaL.html">mesa l</a></li>
+							<li><a href="lampara.html">lámpara &lt</a></li>
+							<li><a href="lamparaL.html">lámpara L&lt</a></li>
+							<!--li><a href="diegoEstrada.html">diego estrada</a></li-->
+							<li><a href="te.html">te</a></li>
+							<li><a href="naturalezas.html">otras naturalezas</a></li>
+						</ul>
+					</section>
+				</div> <!-- menu_proyectos -->
+			</div> <!-- pag_proyectos_wrapper -->
+		</div> <!-- pagina_proyectos -->
+
+		<!-- Scripts externos -->
+		<script src="js/jquery-2.1.1.js"></script>
+		<!-- Scripts propios -->
+		<script src="js/main.js"></script>  
+
 	</body>
 </html>
+
+
+
+
+
+
+

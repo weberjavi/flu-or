@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	 	<meta charset="utf-8">
+	 	<title>flu-or</title>
+	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	  	<link rel="stylesheet" type="text/css" href="css/modernizr.css">
+	  	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  	<link rel="stylesheet" type="text/css" href="css/fluorFlex.css">
+	</head>
+	<body>		
+		<div class="contenedor">
+			<section class="contenedor_datos">
+					<section class="arquitectura"><a href="#" id="arquitectura" class="btn_mostrar"><del>Arquitectura</del></a></section>
+					<section class="estudio">
+					<p><del>flu-or</del> es un estudio de arquitectura en su sentido más amplio. Entendemos arquitectura como el conjunto de procesos a seguir para llegar a un fin y entendemos ese fin como algo físico o mental, material o inmaterial.<br>
+					Nuestro campo de actuación gira entorno a las personas y su ambiente, trabajando con movimiento, situación, sorpresa, encuentro y materia. Tratamos de agitar y provocar diferentes maneras de usar el espacio en el que uno se encuentra, alterar la percepción a la que se está acostumbrado y generar nuevas relaciones.</p>
+					</section>
+					<p class="datos">mail@flu-or.com</p>
+					<p class="datos">881993123</p>
+					<p class="datos">angel rebollo 88, a coruña, españa</p>
+			</section>
+			<section class="flu-or logo_portada">
+				<a href="proyectos.html">FLU-OR</a>
+			</section>
+			<section class="vacia"></section>
+		</div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript">
+
+			$("[class^=btn]").click(function () {
+    			$(this).toggleClass("btn_mostrar btn_ocultar");
+			});
+				/*Función que muestra la información sobre el estudio*/
+				 $("#arquitectura").hasClass(".btn_mostrar").click(function() {
+						$(".estudio").animate({
+						opacity: 1,
+						height: 190
+						}, 1500 );
+					});	
+				/*Función que muestra la información sobre el estudio*/
+				 $$("#arquitectura").hasClass(".btn_ocultar" ).click(function() {
+						$(".estudio").animate({
+						opacity: 0,
+						height: 0
+						}, 1500 );
+					});		
+	</script>
+
+	</body>
+</html>

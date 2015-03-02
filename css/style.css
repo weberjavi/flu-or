@@ -8,32 +8,76 @@
          url("../fonts/BEBAS___-webfont.svg#bebasregular") format("svg");
     font-weight: normal;
     font-style: normal;
-
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box; 
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
+ html, body{
+  /*prevent horizontal scrolling */
+  overflow-x: hidden;
+  margin: 0px;
+}
 body{
 	font-family: Andale Mono, monospace;
+  width: 100vw;
+  height: 100vh;
 }
 ul li{
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 /*
 HOME
 **************************************************/
-.tarjeta{
-	margin-top: 3%;
-	margin-left: 5%;
-	font-size: 0.58em;
+
+.contenedor_datos{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  padding: 30px; 
+  font-size: 0.7em;
+  max-width: 33%;
 }
+.logo_portada{
+  font-family: "Bebas", Helvetica, sans-serif;
+  font-size: 2em;
+  /*Código para centrar el elemento en la pabtalla*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+}
+.datos{
+  line-height: 0.5;
+  text-transform: lowercase;
+}
+.arquitectura{
+  line-height: 2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.flu-or_entexto{
+  font-family: "Bebas", Helvetica, sans-serif;
+}
+.contenido_acordeon{
+  padding-bottom: 3px;
+}
+
 .flu-or/*,.flu-or_interior*/{
 	font-family: "Bebas", Helvetica, sans-serif;
 	font-size: 0.6em;
-	margin-bottom: 25px;
 }
 .flu-or a h1/*,.flu-or_interior a h1*/{
   display: inline;
@@ -71,11 +115,7 @@ PROYECTOS
   	-o-background-size: cover;
   	background-size: cover;
 }
-.flu-or a{
-	text-decoration: none;
-	color: black;
-}
-.menu_proyectos{
+.menu_proyectos, .menu_proyectos_portada{
   position: absolute;
 	margin-top: 3%;
 	margin-left: 5%;
@@ -91,15 +131,9 @@ PROYECTOS
 	text-transform: uppercase;
 	line-height: 1.3;
 }
-.proyectos ul li a{
-	text-decoration: none;
-	color: black;
-}
-
 .proyectos ul li a:hover{
  color: #FFF;
 }
-
 /*
 SLIDER 
 *************************************************/
@@ -111,10 +145,6 @@ SLIDER
   z-index: 7;
   font-size: 0.58em;
   opacity: 1;
-  /*mix-blend-mode: multiply;
-  -webkit-box-shadow: 2px 0px 8px 0px rgba(20, 20, 20, 0.2);
-  -moz-box-shadow:    2px 0px 8px 0px rgba(20, 20, 20, 0.2);
-  box-shadow:         2px 0px 8px 0px rgba(20, 20, 20, 0.2);*/
 }
 .texto_proyecto{
   font-family: "Bebas", Helvetica, sans-serif;
@@ -202,6 +232,7 @@ font-size: 1.3em;
 }
 /*FOTOS*/
 #slider_mesaO .uno{background: url(../img/img_jpg/mesaO_1.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#slider_mesaO .dos{background: url(../img/img_jpg/mesaO_2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
 /*============MESA III=============*/
 #slider_mesaIII{
@@ -353,11 +384,159 @@ ANIMACIONES
 
 
 
+/************************************************Estilos del index_lateral**********************************************/
+/*=========================================================================================================================*/
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+main {
+  position: relative;
+  z-index: 2;
+  /* fix bug on iOS */
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+}
+
+.navigation-is-open main {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
 
 
+/*ESTA PARTE DEL CÓDIGO DEFINE LA PANTALLA DE PROYECTOS*/
+.pagina_proyectos {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.pagina_proyectos  .pag_proyectos_wrapper {
+  /* all navigation content */
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+.navigation-is-open .pagina_proyectos {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.navigation-is-open .pagina_proyectos .pag_proyectos_wrapper {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.8s;
+  -moz-transition: -moz-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+
+.no-js main {
+  height: auto;
+  overflow: visible;
+}
+
+.no-js .pagina_proyectos {
+  position: static;
+  visibility: visible;
+}
+.no-js .pagina_proyectos .pag_proyectos_wrapper  {
+  height: auto;
+  overflow: visible;
+  /*padding: 100px 5%;*/
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
 
 
+/*=========================================================================================================================*/
+/*=========================================================================================================================*/
 
+.navigation-is-open #interaccion_proyecto{
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
 
+/*ESTA PARTE DEL CÓDIGO DEFINE LA PANTALLA DE PROYECTOS*/
+
+.pagina_proyectos  .portada_desde_proyectos {
+  /* all navigation content */
+  height: 100%;
+  overflow-y: auto;
+  left:0;
+  -webkit-overflow-scrolling: touch;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
 
 

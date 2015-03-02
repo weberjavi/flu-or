@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>flu-or</title>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="css/modernizr.css">
+	</head>
+
+
+	<body>
+		<div class="tarjeta">
+			<section class="flu-or">
+				<a href="proyectos.html"><h1>FLU-OR</h1></a>
+			</section>
+			<section class="arquitectura">
+				<p>Arquitectura</p>
+			</section>
+			<section class="datos_contacto">
+				<p>mail@flu-or.com</p>
+				<p>881993123</p>
+				<p>angel rebollo 88, a coruña, españa</p>
+			</section>
+			<!--Esta lista permite cargar las imágenes que se emplearán a lo largo de la web al cargar la página de bienvenida-->
+			<div>
+				<ul>
+					<li id="preload_1"></li>
+					<li id="preload_2"></li>
+					<li id="preload_3"></li>
+					<li id="preload_4"></li>
+					<li id="preload_5"></li>
+					<li id="preload_6"></li>
+					<li id="preload_7"></li>
+					<li id="preload_8"></li>
+					<li id="preload_9"></li>
+					<li id="preload_10"></li>
+					<li id="preload_11"></li>
+					<li id="preload_12"></li>
+					<li id="preload_13"></li>
+					<li id="preload_14"></li>
+					<li id="preload_15"></li>
+					<li id="preload_16"></li>
+					<li id="preload_17"></li>
+					<li id="preload_18"></li>
+					<li id="preload_19"></li>
+				</ul>
+			</div>
+			<script src="js/jquery-1.11.2.min.js"></script>
+			<script type="text/javascript">
+			// función que permite cargar las imágenes de la página antes de necesita @ http://perishablepress.com/press/2009/12/28/3-ways-preload-images-css-javascript-ajax/
+			function preloader() {
+						if (document.getElementById) {
+					document.getElementById("preload_1").style.background = "url(img/img_jpg//mesaO_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_2").style.background = "url(img/img_jpg/mesaIII_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_3").style.background = "url(img/img_jpg//mesaL_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_4").style.background = "url(img/img_jpg//lampara_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_5").style.background = "url(img/img_jpg//lamparaL_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_6").style.background = "url(img/img_jpg//te_1.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_7").style.background = "url(img/img_jpg//mesaIII_2.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_8").style.background = "url(img/img_jpg//mesaIII_3.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_9").style.background = "url(img/img_jpg//mesaIII_4.jpg) no-repeat -9999px -9999px";					
+					document.getElementById("preload_10").style.background = "url(img/img_jpg//mesaL_2.jpg) no-repeat -9999px -9999px";			
+					document.getElementById("preload_11").style.background = "url(img/img_jpg//lampara_2.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_12").style.background = "url(img/img_jpg//lamparaL_3.jpg) no-repeat -9999px -9999px";	
+					document.getElementById("preload_13").style.background = "url(img/img_jpg//lamparaL_4.jpg) no-repeat -9999px -9999px";	
+					document.getElementById("preload_14").style.background = "url(img/img_jpg//lamparaL_5.jpg) no-repeat -9999px -9999px";	
+					document.getElementById("preload_15").style.background = "url(img/img_jpg//lamparaL_6.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_16").style.background = "url(img/img_jpg//lamparaL_2.jpg) no-repeat -9999px -9999px";
+					document.getElementById("preload_17").style.background = "url(img/img_jpg//te_2.jpg) no-repeat -9999px -9999px";	
+					document.getElementById("preload_18").style.background = "url(img/img_jpg//te_3.jpg) no-repeat -9999px -9999px";	
+					document.getElementById("preload_19").style.background = "url(img/img_jpg//te_4.jpg) no-repeat -9999px -9999px";	
+				}
+			}
+			function addLoadEvent(func) {
+				var oldonload = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func;
+				} else {
+					window.onload = function() {
+						if (oldonload) {
+							oldonload();
+						}
+						func();
+					}
+				}
+			}
+			addLoadEvent(preloader);
+</script>
+		</div>
+	</body>
+</html>

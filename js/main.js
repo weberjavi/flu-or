@@ -1,11 +1,33 @@
-//Esta sentencia esconde el menú de proyectos en la carga inicial de la página.
+jQuery(document).ready(function($){
+	var isLateralNavAnimating = false;
+	
+	//Activa la transición de la portada a la página de proyectos. Ésta animación se basa en éste trabajo de http://codyhouse.co/gem/full-screen-pushing-navigation/
+	$('.gatillo_proyectos').on('click', function(event){
+		event.preventDefault();
+		//stop if nav animation is running 
+		if( !isLateralNavAnimating ) {
+			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
+			
+			$('body').toggleClass('navigation-is-open');
+			$('.pag_proyectos_wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+				//animation is over
+				isLateralNavAnimating = false;
+			});
+		}
+	});
+	//Código que esconde y muestra la información sobre el estudio
+	$( ".estudio" ).hide();
+	$( ".btn_acordeon" ).click(function() {
+  		$( ".estudio" ).slideToggle( "slow" );
+	});
+	//Esta sentencia esconde el menú de proyectos en la carga inicial de la página.
 		 			$(".menu_proyectos").hide();
 		 			//Código que define el funcionamiento del slider y el elemento html al que se aplica.
 		 			//La API del slider se puede consultar en http://slideme.luigiferraresi.it/
 					$(".slider").slideme({
 						arrows: true,
 						loop:true,
-						autoslide:false,
+						autoslide:true,
 						interval : 8000,
 						autoslideHoverStop : false,
 						transition : "fade",
@@ -34,3 +56,4 @@
 							}, 500, "swing");
 	  					});
 					});
+});
