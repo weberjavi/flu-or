@@ -1,16 +1,45 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es" class="no-js">
 	<head>
 	 	<meta charset="utf-8">
 	 	<title>flu-or | Mesa O</title>
 	 	<!-- Estilos externos -->
-	  	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	  	<link rel="stylesheet" type="text/css" href="css/modernizr.css">
-	  	<link rel="stylesheet" type="text/css" href="css/slideme2.css"/>
+	  	<link rel="stylesheet" type="text/css" href="css/externo/normalize.css">
+	  	<link rel="stylesheet" type="text/css" href="css/externo/modernizr.css">
+	  	<link rel="stylesheet" type="text/css" href="css/externo/slideme2.css"/>
 	  	 <!-- Estilos propios -->
-	  	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  	<link rel="stylesheet" type="text/css" href="css/propio/style.css">
+
+	  	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	</head>
-	<body>		
+	<body>
+	<!-- - - - - - - - - - - - PORTADA  - - - - - - - - - - - - -->
+
+	<div id="pagina_proyectos" class="pagina_proyectos">
+		<div class="pag_proyectos_wrapper portada_desde_proyectos">
+			<div id="portada" class="contenedor">
+				<section  id="acordeon" class="contenedor_datos">
+					<section><a href="#" class="btn_acordeon arquitectura"><del>arquitectura</del></a></section>
+					<section class="contenido_acordeon">
+					<p class="estudio"><del>flu-or</del> es un estudio de arquitectura en su sentido más amplio. Entendemos arquitectura como el conjunto de procesos a seguir para llegar a un fin y entendemos ese fin como algo físico o mental, material o inmaterial.<br>
+					Nuestro campo de actuación gira entorno a las personas y su ambiente, trabajando con movimiento, situación, sorpresa, encuentro y materia. Tratamos de agitar y provocar diferentes maneras de usar el espacio en el que uno se encuentra, alterar la percepción a la que se está acostumbrado y generar nuevas relaciones.</p>
+					</section>
+					<p class="datos">mail@flu-or.com</p>
+					<p class="datos">881993123</p>
+					<p class="datos">angel rebollo 88, a coruña, españa</p>
+				</section><!--contenedor_datos-->
+
+				<section class="logo_portada">
+					<a href="#pagina_proyectos" class="gatillo_proyectos">FLU-OR</a>
+				</section> <!--logo_portada-->
+
+			</div> <!-- contenedor-->
+		</div> <!-- pag_proyectos_wrapper -->
+	</div> <!-- pagina_proyectos -->
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<main id="interaccion_proyecto">
 		<div id="slider_mesaO" class="slider">
 			<div id="informacion" class="elemento_animado animacion_haciaderecha">
 				<section class="cerrar">
@@ -31,7 +60,7 @@
 				</ul>
 			<div class="menu_proyectos">
 				<section class="flu-or">
-					<a href="index.html"><h1>FLU-OR</h1></a>
+					<a href="#portada" class="gatillo_proyectos"><h1>FLU-OR</h1></a>
 				</section>
 				<section class="proyectos">
 					<ul>
@@ -48,11 +77,15 @@
 				</section>
 			</div>	
 		</div>
+</main>
+
+
 		<!-- Scripts externos -->
 	  	<script src="js/jquery-2.1.1.js"></script>
 		<script type="text/javascript" src="js/jquery.slideme2.js"></script>
 		<!-- Scripts propios -->
 		<script src="js/main.js"></script>
+		
 		
 
 	</body>
